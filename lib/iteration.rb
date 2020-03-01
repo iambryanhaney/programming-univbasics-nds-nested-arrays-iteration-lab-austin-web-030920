@@ -23,6 +23,7 @@ def find_greater_pair(src)
   row_index = 0
   while row_index < src.length do
     new_array << src[row_index][0] > src[row_index][1] ? src[row_index][0] : src[row_index][1]
+    row_index += 1
   end
   new_array
 end
@@ -35,4 +36,8 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
+  new_array = []
+  row_index = 0
+  while row_index < src.length do
+    new_array << src[row_index]
 end

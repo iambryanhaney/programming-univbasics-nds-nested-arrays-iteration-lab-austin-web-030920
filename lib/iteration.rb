@@ -22,7 +22,8 @@ def find_greater_pair(src)
   new_array = []
   row_index = 0
   while row_index < src.length do
-    new_array << (src[row_index][0] > src[row_index][1]) ? src[row_index][0] : src[row_index][1]
+    larger_num = (src[row_index][0] > src[row_index][1]) ? src[row_index][0] : src[row_index][1]
+    new_array << larger_num
     row_index += 1
   end
   new_array
